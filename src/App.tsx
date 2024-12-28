@@ -1,12 +1,12 @@
 
 function App() {
-  
+
 
   return (
     <>
-   <h1>Hola Mundo</h1>
-   <p>Hola Mundo 2</p>
-
+      <header className="bg-teal-400 py-5">
+        <h1 className="text-center text-5xl font-black">Calculadora de Propinas y Consumo</h1>
+      </header>
     </>
   )
 }
