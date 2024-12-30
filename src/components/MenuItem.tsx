@@ -6,7 +6,7 @@ type MenuItemProps = {
 
 export const MenuItem = ({ item }: MenuItemProps) => {
     return (
-        <button className="rounded-xl border-2 border-teal-400 w-full p-3 hover:bg-teal-300  flex justify-between">
+        <button className="border-2 border-teal-400 w-full p-3 hover:bg-teal-300  flex justify-between transform transition-transform duration-500 hover:scale-110">
             <p>{item.name}</p>
             <p className="font-black">${item.price}</p>
         </button>
