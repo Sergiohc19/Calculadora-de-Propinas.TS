@@ -8,7 +8,7 @@ export const useOrder = () => {
 
 
   return (
-  const [order, setOrder] = useState([])
+  const [order, setOrder] = useState<OrderItem[]>([])
   const [total, setTotal] = useState<>(0)
   const [auth, setAuth] = useState(false)
   
