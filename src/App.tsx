@@ -1,7 +1,11 @@
 import { MenuItem } from "./components/MenuItem";
 import { menuItems } from "./data/db";
+import { useOrder } from "./hooks/useOrder"
 
 function App() {
+
+const { addItem } = useOrder()
+
   return (
     <>
       <header className="bg-gradient-to-br from-teal-700 from-10% via-teal-500 via-30% to-teal-300 to-90% py-5">
@@ -16,7 +20,11 @@ function App() {
 
           <div className="space-y-3 my-10">
             {menuItems.map((item) => (
-              <MenuItem key={item.id} item={item} />
+              <MenuItem 
+                key={item.id}
+                item={item} 
+                addItem={addItem}
+                />
             ))}
           </div>
 
