@@ -21,8 +21,9 @@ export const UseOrder = () => {
     }
   }
 
-  console.log(order)
+
   return {
+    order,
     addItem
   }
 }
