@@ -1,30 +1,20 @@
 import { useState } from "react"
-import type { OrderItem } from "../types"
+import type { MenuItem, OrderItem } from "../types"
 
 
-
-export const useOrder = () => {
-
+export const UseOrder = () => {
 
   const [order, setOrder] = useState<OrderItem[]>([])
 
-  const addItem = () => {
-    console.log("agregando...")
+  const addItem = (item : MenuItem) => {
+    
+    const newItem : OrderItem = {...item, quantity: 1}
+    setOrder([...order, newItem])
 
   }
 
-
-
-
+    console.log(order)
   return {
-
-  
-
-
-
-  
-
-
-
+    addItem
   }
 }

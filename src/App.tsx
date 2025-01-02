@@ -1,10 +1,10 @@
-import { MenuItem } from "./components/MenuItem";
+import  MenuItem  from "./components/MenuItem";
 import { menuItems } from "./data/db";
-import { useOrder } from "./hooks/useOrder"
+import  {UseOrder}  from "./hooks/useOrder"
 
 function App() {
 
-const { addItem } = useOrder()
+const { addItem } = UseOrder()
 
   return (
     <>
@@ -24,6 +24,7 @@ const { addItem } = useOrder()
                 key={item.id}
                 item={item} 
                 addItem={addItem}
+                
                 />
             ))}
           </div>
