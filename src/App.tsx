@@ -6,7 +6,7 @@ import { UseOrder } from "./hooks/useOrder";
 import TipPercentageForm from "./components/TipPercentageForm";
 
 function App() {
-  const { order, addItem, removeItem } = UseOrder();
+  const { order, addItem, removeItem, tip, setTip } = UseOrder();
 
   return (
     <>
@@ -29,7 +29,7 @@ function App() {
           <OrderContents order={order} removeItem={removeItem} />
 
           <TipPercentageForm 
-          
+          setTip={setTip}
           
           />
 
