@@ -33,7 +33,11 @@ function App() {
           
           />
 
-          <OrderTotals order={order} />
+          <OrderTotals 
+          order={order} 
+          tip={tip}
+          
+          />
         </div>
       </main>
     </>

@@ -20,6 +20,7 @@ const tipOptions = [
 
 type TipPercentageFormProps = {
     setTip: React.Dispatch<React.SetStateAction<number>>
+    
 
     
 }
