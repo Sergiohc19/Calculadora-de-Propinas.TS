@@ -1,9 +1,9 @@
 import MenuItem from "./components/MenuItem";
 import OrderContents from "./components/OrderContents";
-import OrderTotals  from "./components/OrderTotals"
+import OrderTotals from "./components/OrderTotals";
 import { menuItems } from "./data/db";
 import { UseOrder } from "./hooks/useOrder";
-
+import TipPercentageForm from "./components/TipPercentageForm";
 
 function App() {
   const { order, addItem, removeItem } = UseOrder();
@@ -26,14 +26,14 @@ function App() {
         </div>
 
         <div className="border border-dashed border-slate-300 p-5 mx-6 rounded-lg space-y-10">
-          <OrderContents 
-          order={order} 
-          removeItem={removeItem}
-          />
-          <OrderTotals 
-          order={order} 
+          <OrderContents order={order} removeItem={removeItem} />
+
+          <TipPercentageForm 
+          
           
           />
+
+          <OrderTotals order={order} />
         </div>
       </main>
     </>
