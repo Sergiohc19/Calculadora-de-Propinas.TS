@@ -1,7 +1,7 @@
 import type { MenuItem } from "../types/";
 
 type MenuItemProps = {
-    item: MenuItem, // Aquí usas el tipo renombrado
+    item: MenuItem, 
     addItem: (item: MenuItem) => void
 };
 
